@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+
+.rojo {
+    color: red;
+}
+
+.contenedor {
+    padding: 40px;
+    margin: 40px;
+    border: 20px black solid;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.w3-contenedor {
+    padding: 40px;
+    margin: 40px;
+    border: 20px black solid;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.item-menu {
+    color: darkblue;
+    margin: 10px;
+    min-width: 20px;
+    min-height: 58;
+    border: solid white 2px;
+    float: right;
+}
+
+.item-menu:hover {
+    color: white;
+    background-color: darkblue;
+    transform: scale(2, 2);
+    margin: 10px;
+    cursor: pointer;
+    border: gray solid 2px;
+    min-width: 20px;
+    min-height: 58;
+}
+
+.texto-derecha {
+    text-align: left
+}
+
+body {
+    font-family: Quicksand, sans-serif;
+    font-size: 6;
+    color: blue;
+}
+
+.opciones {
+    border-style: groove;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+    padding: 20px;
+}
+
+.opciones:hover {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-style: double;
+}
+
+.texto-articulos {
+    text-align: left;
+    color: black;
+}
+
+.titulo {
+    color: black;
+    font-weight: bold;
+}
+
+.boton {
+    align-content: center;
+    margin: 50px;
+}
+
+.img {
+    width: 100%;
+}
+
+.img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1.02, 1.02);
+}
+
+.borde {
+    border-style: ridge;
+}
+
+.linea {
+    size: "150";
+    width: "100%";
+    color: "darkblue";
+}

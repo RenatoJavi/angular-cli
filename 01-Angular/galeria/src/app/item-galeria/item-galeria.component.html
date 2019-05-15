@@ -1,0 +1,24 @@
+<h1 class="rojo">
+  <!-- interpolación -- sintaxis {{}}-->
+  Tienda - {{titulo}}
+</h1>
+<p>Nombre: {{nombreItem}} </p>
+<!-- EVENT BINDING con paréntesis dentro de una etiqueta Escuchar un evento-->
+<button (click) ="alertar()"> 
+  {{textoBoton}}
+</button>
+
+<!--Property Binding-->
+<img 
+  [src]="url"
+  alt="" (click) ="cambiarImagen()">
+
+
+  <!--Directiva -> ngFor-->
+  
+
+ <div *ngFor="let nota of notas">
+   <button (click)="agregarCarrito(nota, titulo)">
+     Añadir: {{nota}}
+   </button> 
+ </div>
