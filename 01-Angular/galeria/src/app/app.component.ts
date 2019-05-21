@@ -9,69 +9,54 @@ import { CarritoService } from './servicios/carrito/carrito.service';
 export class AppComponent {
   title = 'Floreria';
   color = 'rojo';
+
   estaMostrando = false;
 
-  arregloFlores =[
-    new Flor("Rosa", "Azul"),
-    new Flor("Dalias", "blancas"),
-    new Flor("Margaritas", "Amarillas")
+  arregloFlores = [
+    new Flor('Rosa', 'Azul'),
+    new Flor('Dalias', 'blancas'),
+    new Flor('Margaritas', 'Amarillas')
   ];
 
   arregloFloresJs = [
     {
-      titulo: "Don J",
-      nombre: "Rosa",
-      descripcion: "azul",
-      notas: [
-        'Hot dog',
-        'Hamburguesas',
-        'Papitas'
-      ]
+      titulo: 'Don J',
+      nombre: 'Rosa',
+      descripcion: 'azul',
+      notas: ['Hot dog', 'Hamburguesas', 'Papitas']
     },
     {
-      titulo: "Don Pepe",
-      nombre: "Dalias",
-      descripcion: "Blancas",
-      notas: [
-        'Papitas',
-        'empanadas'
-      ]
+      titulo: 'Don Pepe',
+      nombre: 'Dalias',
+      descripcion: 'Blancas',
+      notas: ['Papitas', 'empanadas']
     },
     {
-      titulo: "Doña Maria",
-      nombre: "Margaritas",
-      descripcion: "Semiblancas",
-      notas: [
-        'motes',
-        'fritada',
-        'Papitas'
-      ]
+      titulo: 'Doña Maria',
+      nombre: 'Margaritas',
+      descripcion: 'Semiblancas',
+      notas: ['motes', 'fritada', 'Papitas']
     }
-  ]
+  ];
 
-  constructor(private readonly _carritoService: CarritoService){
+  constructor(private readonly _carritoService: CarritoService) {}
 
+  cambioFeliz(evento: boolean) {
+    // logica para hacerle verde
+    console.log('Feliz');
+    this.color = 'verde';
   }
 
-  cambioFeliz(evento:boolean){
-    //logica para hacerle verde
-    console.log("Feliz");
-    this.color = "verde";
-    
+  cambioEnojado(evento: boolean) {
+    // logica para hacerlo amarillo
+    console.log('Enojado');
+    this.color = 'amarillo';
   }
 
-  cambioEnojado(evento:boolean){
-    //logica para hacerlo amarillo
-    console.log("Enojado")
-    this.color = "amarillo"
-
-  }
-
-  mostrar(estaMostrando){
+  mostrar(estaMostrando) {
     this.estaMostrando = estaMostrando;
   }
 }
-
 
 // class Flor{
 //   nombre: string;
@@ -82,11 +67,9 @@ export class AppComponent {
 //   }
 // }
 
-class Flor{
-  
+class Flor {
   constructor(
-    public nombre:string, //sin public no es un atributo de la clase
-    public descripcion:string){
-    
-  }
+    public nombre: string, // sin public no es un atributo de la clase
+    public descripcion: string
+  ) {}
 }
