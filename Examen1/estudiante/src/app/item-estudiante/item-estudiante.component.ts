@@ -2,16 +2,19 @@ import { Component, OnInit, Input, Output, EventEmitter, OnDestroy } from '@angu
 
 @Component({
   selector: 'app-item-estudiante', //--> nombre de  mi etiqueta
-  templateUrl: './item-estudiante.component.html',
+  templateUrl: './item-estudiante.component.html'titul,
   styleUrls: ['./item-estudiante.component.css']
 })
 export class ItemEstudianteComponent implements OnInit, OnDestroy {
   title = 'grupos';
-  @Input()
+
+   @Input()
   titulo;
 
   @Input()
   nombreItem;
+
+
 
   @Output()
   cambioClase: EventEmitter<boolean>;

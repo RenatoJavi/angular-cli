@@ -7,24 +7,39 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = ' Lista estudiante';
+  estasMostrando = true;
+  aulas = [
+    {
+      etiqueta: 'Aula1',
+      piso: 'uno'
+    },
+    {
+      etiqueta: 'Aula2',
+      piso: 'dos'
+    },
+    {
+      etiqueta: 'Aula3',
+      piso: 'tres'
+    }
+  ];
 
   peliculas = [
     {
-      titulo: 'Ing Sandra',
+      titulo: 'TIENDA DE LIBROS',
       pelicula: 'Batman v. Superman',
       director: 'Zack Snider',
       anio: '2016',
       duracion: '1'
     },
     {
-      titulo: 'Ing Renato',
+      titulo: 'TIENDA DE GORRAS',
       pelicula: 'La verdad duele',
       director: 'Will Smith',
       anio: '2015',
       duracion: '2'
     },
     {
-      titulo: 'Ing Cesar',
+      titulo: 'tienda de Golocinas',
       pelicula: 'Una historia real',
       director: 'Desconocido',
       anio: '2014',
