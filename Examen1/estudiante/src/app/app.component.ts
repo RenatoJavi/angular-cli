@@ -7,26 +7,62 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = ' Lista estudiante';
-  arregloDeMateria = [];
+
+  peliculas = [
+    {
+      pelicula: 'Batman v. Superman',
+      director: 'Zack Snider',
+      anio: '2016',
+      duracion: '1'
+    },
+    {
+      pelicula: 'La verdad duele',
+      director: 'Will Smith',
+      anio: '2015',
+      duracion: '2'
+    },
+    {
+      pelicula: 'Una historia real',
+      director: 'Desconocido',
+      anio: '2014',
+      duracion: '3'
+    }
+  ];
+
+  materias = [
+    {
+      materiaNombre: 'Web',
+      codigo: '801',
+      descripcion: 'aplicado a la web',
+      activo: true,
+      fechaCreacion: '2000',
+      numerosHorasPorSemana: '4',
+      estudianteId: 101
+    },
+    {
+      materiaNombre: 'Auditoría',
+      codigo: 802,
+      descripcion: 'CMMI',
+      activo: true,
+      fechaCreacion: 2012,
+      numerosHorasPorSemana: 4,
+      estudianteId: 102
+    },
+    {
+      materiaNombre: 'Gestion de TIC',
+      codigo: 803,
+      descripcion: 'COBIT',
+      activo: false,
+      fechaCreacion: 2000,
+      numerosHorasPorSemana: 4,
+      estudianteId: 103
+    }
+  ];
 }
 
-class materia {
-  nombre: int;
-  codigo: string;
-  descripcion: strig;
-  activo: bool;
-  fechaCreacion: string;
-  numerosHorasPorSemana: int;
-  estudianteId: int;
-  constructor(
-    nombre: int,
-    codigo: string,
-    descripcion: strig,
-    activo: bool,
-    fechaCreacion: string,
-    numerosHorasPorSemana: int,
-    estudianteId: int
-  ) {
-    this.nombre = nombre;
-  }
-}
+// class Flor {
+//   constructor(
+//     public nombre: any,
+//     public codigo: string // public descripcion: string, // public activo: boolean, // public fechaCreacion: string, // public numerosHorasPorSemana: any, // public estudianteId: any
+//   ) {}
+// }
