@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = ' Lista estudiante';
+  arregloDeMateria = [];
+}
+
+class materia {
+  nombre: int;
+  codigo: string;
+  descripcion: strig;
+  activo: bool;
+  fechaCreacion: string;
+  numerosHorasPorSemana: int;
+  estudianteId: int;
+  constructor(
+    nombre: int,
+    codigo: string,
+    descripcion: strig,
+    activo: bool,
+    fechaCreacion: string,
+    numerosHorasPorSemana: int,
+    estudianteId: int
+  ) {
+    this.nombre = nombre;
+  }
 }

@@ -10,6 +10,9 @@ export class ItemEstudianteComponent implements OnInit {
 
   @Input()
   nombreItem;
+  url = 'https://mascotaspara.com/wp-content/uploads/2017/04/BOXER-1.jpg';
+
+  notas = [1, 2, 3, 4, 5, 6];
 
   constructor() {}
 
@@ -17,6 +20,9 @@ export class ItemEstudianteComponent implements OnInit {
 
   hacerClick() {
     alert('hello Niko!' + this.nombreItem);
+  }
+  alertarBlur() {
+    alert('ALERTAR BLUR!');
   }
 }
 
