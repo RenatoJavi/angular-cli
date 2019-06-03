@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root', //componete padre
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -10,18 +10,21 @@ export class AppComponent {
 
   peliculas = [
     {
+      titulo: 'Ing Sandra',
       pelicula: 'Batman v. Superman',
       director: 'Zack Snider',
       anio: '2016',
       duracion: '1'
     },
     {
+      titulo: 'Ing Renato',
       pelicula: 'La verdad duele',
       director: 'Will Smith',
       anio: '2015',
       duracion: '2'
     },
     {
+      titulo: 'Ing Cesar',
       pelicula: 'Una historia real',
       director: 'Desconocido',
       anio: '2014',

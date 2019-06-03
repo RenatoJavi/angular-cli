@@ -1,12 +1,13 @@
-<h1 class="rojo">Item Estudiantes - {{ title }}</h1>
+<!-- <h1 class="rojo">Item Estudiantes - {{ title }}</h1> -->
+<h1 class="rojo">Tienda: {{ titulo }}</h1>
 
 <P>Nombre etiqueta: {{ nombreItem }} </P>
 
-<!---->
+<!--event bading-- se suscribe con los parantesis-->
 
 <!-- <button (click)="hacerClick()">{{ nombreItem }}</button> -->
 <button (blur)="alertarBlur()" (click)="hacerClick()">{{ nombreItem }}</button>
-<!-- propiedades o atributos -->
+<!-- propiedades o atributos `property baini-->
 <img [src]="url" alt="" />
 
 <p *ngFor="let nota of notas">{{ nota }}</p>
