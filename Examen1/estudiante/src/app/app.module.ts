@@ -13,12 +13,11 @@ import { ItemEstudianteComponent } from './item-estudiante/item-estudiante.compo
   ],
   imports: [
     //otros modulos
-    BrowserModule,
+    BrowserModule, //comparte una Directiva ngfor
     AppRoutingModule
   ],
   providers: [
     //servicios
-    carritoService
   ],
   bootstrap: [AppComponent]
 })
