@@ -10,4 +10,7 @@
 <!-- propiedades o atributos `property baini-->
 <img [src]="url" alt="" />
 
-<p *ngFor="let nota of notas">{{ nota }}</p>
+<div *ngFor="let nota of notas">
+    <button (click)="agregarCarrito(nota)">Añadir: {{ nota }}</button>
+    <button (click)="quitarCarrito(nota)">restar: {{ nota }}</button>
+</div>

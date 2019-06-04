@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CarritoService } from './servicios/carrito.service';
 
 @Component({
   selector: 'app-root', //componete padre
@@ -76,6 +77,8 @@ export class AppComponent {
       estudianteId: 103
     }
   ];
+
+  constructor(private readonly carritoService: CarritoService) {}
 }
 
 // class Flor {

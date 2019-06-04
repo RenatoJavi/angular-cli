@@ -39,6 +39,16 @@ export class ItemEstudianteComponent implements OnInit, OnDestroy {
     //Called once, before the instance is destroyed.
     //Add 'implements OnDestroy' to the class.
   }
+  agregarCarrito(valorCarrito: number) {
+    //this._carritoService.carritoCompras.push(valorCarrito);
+    this._carritoService.carritoCompras.splice(0, 0, valorCarrito);
+    console.log(this._carritoService.carritoCompras);
+  }
+  quitarCarrito(valorCarrito: number) {
+    //this._carritoService.carritoCompras.push(valorCarrito);
+    this._carritoService.carritoCompras.slice(0, 0);
+    console.log(this._carritoService.carritoCompras);
+  }
 
   hacerClick() {
     alert('hello Niko!' + this.nombreItem);
