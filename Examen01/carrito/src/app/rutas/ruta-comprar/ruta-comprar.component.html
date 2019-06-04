@@ -1,0 +1,106 @@
+<p>
+  ruta-comprar works!
+</p>
+
+
+
+<form #formularioFactura="ngForm"
+novalidate
+(ngSubmit)="guardarFactura(formularioFactura)">
+    <div class="row">
+        <div class="col-lg-6">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" 
+            required 
+            name="nombre"  
+            type="text"   
+            [(ngModel)]="nombre"
+            #vtNombre="ngModel"
+            >
+
+            <label for="id">RUC / Cedula</label>
+            <input id="id" 
+            required 
+            name="id"  
+            type="text"   
+            [(ngModel)]="id"
+            #vtId="ngModel"
+            >
+            <br>
+            <div class="col">
+                <label for="direccion">Dirección</label>
+                <input id="direccion" 
+                required 
+                name="direccion"  
+                type="text"   
+                [(ngModel)]="direccion"
+                #vtDireccion="ngModel"
+                >
+            </div>
+            <div class="col">
+                <label for="telefono"> Teléfono</label>
+                <input id="telefono" 
+                required 
+                name="telefono"  
+                type="text"   
+                [(ngModel)]="telefono"
+                #vtTelefono="ngModel"
+                >
+            </div>
+
+            <div class="col-md-12">
+                <label for="correo">Correo</label>
+
+                <input id="correo" 
+                required 
+                name="correo"  
+                type="email"   
+                [(ngModel)]="correo"
+                #vtCorreo="ngModel"
+                >
+            </div>
+            <div class="col">
+                {{_carritoService.carrito | json}}
+            </div>
+            <div>
+              <ul class="list-group" *ngFor="let item of carrito['productos']">
+                <li class="list-group-item" *ngIf="item.cantidad >0">{{item.valor1}} - {{item.valor2}}  Cantidad:{{item.cantidad}} 
+                  <button type="button" (click)="quitar(item)">
+                    quitar
+                  </button>
+                </li>
+              </ul>
+            </div>
+        </div>
+      
+      
+        <div class="col-lg-6">
+          <h3>
+            CAJERO: {{cajero}}
+          </h3>
+          <h3>
+            TOTAL : {{total}}
+          </h3>
+          <ul class="list-group" *ngFor="let item of productos">
+            <li class="list-group-item">{{item.estudiante}} -- {{item.materia}}
+              <button type="button" (click)="agregar(item)">
+                aumentar
+              </button>
+            </li>
+          </ul>
+        
+
+        </div>
+      </div>
+      <pre>ERROR: 
+          {{vtNombre.errors | json}}
+        </pre>
+    
+      <br>
+      <br>
+      <button class="btn btn-outline-primary btn-block" type="submit" [disabled]="formularioFactura.invalid" >Finalizar compra</button>
+      <button class="btn btn-outline-danger btn-block estaciado-boton"  type="button" (click)="redirigir()"> Cancelar</button>
+    
+
+</form>
+

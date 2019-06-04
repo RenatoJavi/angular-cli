@@ -1,0 +1,9 @@
+<div>
+    <label for="nombre">Ingrese Nombre : </label>
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" />
+</div>
+<div>
+    <button type="submit" (click)="ingresar(nombre)">
+    Registrar
+  </button>
+</div>

@@ -78,7 +78,7 @@ export class AppComponent {
     }
   ];
 
-  constructor(private readonly carritoService: CarritoService) {}
+  constructor(public readonly carritoService: CarritoService) {}
 }
 
 // class Flor {

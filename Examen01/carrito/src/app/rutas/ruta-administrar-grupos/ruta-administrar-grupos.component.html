@@ -1,0 +1,69 @@
+<p>
+  ruta-administrar-grupos works!
+</p>
+
+<h1>Gestion de Grupos</h1>
+<p>Busque, cree, actualice y elimine grupos
+  Puede buscar grupos por el nombre</p>
+
+
+  <div class="row">
+    <div class="col-sm-9">
+      <label for="busqueda">Busqueda</label>
+      <input id="busqueda" type="text" name="busqueda" [(ngModel)]="busqueda">
+      <br>
+    </div>
+    <div class="col-sm-3">
+      <button class="btn btn-outline-success btn-block" (click)="buscar(busqueda)">
+        Buscar
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-9"></div>
+    <div class="col-sm-3">
+          <button class="btn btn-outline-success btn-block" [routerLink]="['/menu','revisar-grupos','nuevo']">
+              Crear estudiante
+          </button>
+    </div>
+</div>
+
+  <div class="modal-body">
+
+    <table class="table table-hover animated fadeInUp">
+
+        <!-- tr -> table row -->
+        <thead>
+        <!-- tr -> table row -->
+        <tr>
+            <!-- th -> table header -->
+            <th width="20%">Nombre</th>
+            <th width="20%">Apellido</th>
+            <th width="20%">Fecha de Nacimiento</th>
+            <th width="20%">Semestre actual</th>
+            <th width="20%">Graduado</th>
+            <th width="20%">Acciones</th>
+        </tr>
+        </thead>
+
+        <tbody >
+        <!-- <% arregloUsuario.forEach( (usuario)=> { %> -->
+        <tr *ngFor="let item of estudiantes">
+            <td> {{item.nombres}} </td>
+            <td>{{item.apellidos}} </td>
+            <td> {{item.fechaNacimiento}} </td>
+            <td> {{item.semestreActual}} </td>
+            <td> {{item.graduado}} </td>
+            <td>
+                
+                    <button class="btn btn-outline-primary btn-block estaciado-boton" (click)="redirigir(item.id)" >Productos</button>
+                    <button class="btn btn-outline-danger btn-block estaciado-boton"  type="submit" (click)= "eliminar(item.id)"> Eliminar</button>
+                
+            </td>
+        </tr>
+        <!-- <% }) %> -->
+        </tbody>
+    </table>
+
+</div>

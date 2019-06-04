@@ -1,0 +1,71 @@
+<p>
+    ruta-nueva-materia works!
+</p>
+
+<pre>Valido: {{ formularioUsuario.valid }}</pre>
+<pre>Invalido: {{ formularioUsuario.invalid }}</pre>
+
+<form #formularioUsuario="ngForm" novalidate (submit)="guardarMateria(formularioUsuario)">
+    <div class="row">
+        <div class="col">
+            <label for="nombre">Nombre</label>
+
+            <input id="nombre" required name="nombre" type="email" [(ngModel)]="nombre" #vtNombre="ngModel" />
+        </div>
+        <div class="col">
+            <label for="precio"> Precio </label>
+            <input id="precio" required name="precio" type="number" min="10" max="200" [(ngModel)]="precio" #vtprecio="ngModel" />
+        </div>
+    </div>
+    <br />
+    <label for="descripcion">descripción</label>
+    <input id="descripcion" required name="descripcion" type="text" [(ngModel)]="descripcion" #vtdescripcion="ngModel" />
+    <br />
+
+    <label for="fechaCreacion">Fecha de Creación</label>
+
+    <input id="fechaCreacion" required name="fechaCreacion" type="date" [(ngModel)]="fechaCreacion" #vtFechaCreacion="ngModel" />
+
+    <br />
+    <label for="activo">Estado </label>
+    <select class="form-control" id="activo" required name="activo" type="se" [(ngModel)]="activo" #vtActivo="ngModel">
+    <option value="true">Activo</option>
+    <option value="false">No activo</option>
+  </select>
+
+    <br />
+
+    <label for="numeroHorasPorSemana"> Numero de horas por semana </label>
+    <input id="numeroHorasPorSemana" required name="numeroHorasPorSemana" type="number" min="1" max="8" [(ngModel)]="numeroHorasPorSemana" #vtNumeroHorasPorSemana="ngModel" />
+
+    <div *ngIf="vtNombre.errors && vtNombre.dirty">
+        <h3>Errores</h3>
+        <p>Existe un error</p>
+        <p *ngIf="vtNombre.errors.minlength">Minimo 10 caracteres</p>
+        <p *ngIf="vtNombre.errors.pattern">Ingresar letras</p>
+        <p *ngIf="vtNombre.errors.required">Requisito obligatorio >:(</p>
+    </div>
+
+    <pre>
+ERROR:
+      {{ vtNombre.errors | json }}
+    </pre
+  >
+
+  <br />
+  <br />
+  <button
+    class="btn btn-outline-primary btn-block"
+    type="submit"
+    [disabled]="formularioUsuario.invalid"
+  >
+    Crear
+  </button>
+  <button
+    class="btn btn-outline-danger btn-block estaciado-boton"
+    type="submit"
+    (click)="redireccionar()"
+  >
+    Cancelar
+  </button>
+</form>

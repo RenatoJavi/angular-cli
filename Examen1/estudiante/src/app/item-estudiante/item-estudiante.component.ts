@@ -41,6 +41,11 @@ export class ItemEstudianteComponent implements OnInit, OnDestroy {
   }
   agregarCarrito(valorCarrito: number) {
     //this._carritoService.carritoCompras.push(valorCarrito);
+    const itemCarrito = {
+      valor: valorCarrito,
+      nombreTienda: this.titulo
+    };
+
     this._carritoService.carritoCompras.splice(0, 0, valorCarrito);
     console.log(this._carritoService.carritoCompras);
   }
