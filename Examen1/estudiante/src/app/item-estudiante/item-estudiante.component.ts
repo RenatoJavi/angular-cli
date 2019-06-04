@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
-import { TiendaService } from '../tienda/tienda.service';
+import { CarritoService } from '../servicios/carrito.service';
 
 @Component({
   selector: 'app-item-estudiante', //--> nombre de  mi etiqueta
@@ -24,14 +24,15 @@ export class ItemEstudianteComponent implements OnInit, OnDestroy {
   //nos va ayudar a la Dependency Inyection , EL SERVICIO ES UN TIPO de Dependencia
 
   //servicios compartidos
-  //servicio-->componentes
-  //servicios-->SERVICIOS
-  // es un alias _tiendaService
-  constructor(private readonly _tiendaService: TiendaService) {}
+  //servicios se inyecta en-->Componentes
+  //servicio se inyecta en-->componentes
+  //serviciosse inyecta en -->SERVICIOS
+  // es un Alias _tiendaService, CON LOS : sabe que servicio inyectar, importa este sevicio
+  constructor(private readonly _carritoService: CarritoService) {}
 
   ngOnInit() {
     console.log('empezo');
-    console.log(this._tiendaService.tiendaCompras);
+    console.log(this._carritoService.carritoCompras);
   }
   ngOnDestroy() {
     console.log('termino');
