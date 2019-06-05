@@ -1,7 +1,3 @@
-<p>
-    ruta-nueva-materia works!
-</p>
-
 <pre>Valido: {{ formularioUsuario.valid }}</pre>
 <pre>Invalido: {{ formularioUsuario.invalid }}</pre>
 
@@ -46,26 +42,22 @@
         <p *ngIf="vtNombre.errors.required">Requisito obligatorio >:(</p>
     </div>
 
-    <pre>
+    <!-- <pre>
 ERROR:
       {{ vtNombre.errors | json }}
-    </pre
-  >
+    </pre -->
+    >
 
-  <br />
-  <br />
-  <button
-    class="btn btn-outline-primary btn-block"
-    type="submit"
-    [disabled]="formularioUsuario.invalid"
-  >
+    <br />
+    <br />
+    <button class="btn btn-outline-primary btn-block" type="submit" [disabled]="formularioUsuario.invalid">
     Crear
   </button>
-  <button
-    class="btn btn-outline-danger btn-block estaciado-boton"
-    type="submit"
-    (click)="redireccionar()"
-  >
+    <button class="btn btn-outline-danger btn-block estaciado-boton" type="submit" (click)="redireccionar()">
     Cancelar
   </button>
 </form>
+
+<p>
+    ruta-nueva-materia works!
+</p>

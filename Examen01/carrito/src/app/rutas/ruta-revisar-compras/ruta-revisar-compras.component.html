@@ -1,14 +1,14 @@
-<h1>Gestion de Compras</h1>
+<h1>Compras</h1>
 <p>Busque sus facturas por el nombre de cajero o comprador</p>
 
 <div class="row">
-    <div class="col-sm-9">
-        <label for="busqueda">Busqueda</label>
-        <input id="busqueda" type="text" name="busqueda" [(ngModel)]="busqueda" />
+    <div class="col-md-8">
+        <label for="busqueda">Busqueda por nombre <input id="busqueda" type="text" name="busqueda" [(ngModel)]="busqueda"
+    /></label>
         <br />
     </div>
-    <div class="col-sm-3">
-        <button class="btn btn-outline-success btn-block" (click)="buscar(busqueda)">
+    <div class="col-md-3">
+        <button class="btn btn-outline-info btn-block" (click)="buscar(busqueda)">
       Buscar
     </button>
     </div>
@@ -30,7 +30,6 @@
         </thead>
 
         <tbody>
-            <!-- <% arregloUsuario.forEach( (usuario)=> { %> -->
             <tr *ngFor="let item of facturas">
                 <td>{{ item.nombreCajero }}</td>
                 <td>{{ item.nombre }}</td>
@@ -38,7 +37,6 @@
                 <td>{{ item.telefono }}</td>
                 <td>{{ item.total }}</td>
             </tr>
-            <!-- <% }) %> -->
         </tbody>
     </table>
 </div>
