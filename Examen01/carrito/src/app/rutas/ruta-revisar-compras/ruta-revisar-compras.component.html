@@ -1,0 +1,54 @@
+<h1>Compras</h1>
+<p>Busque sus facturas por el nombre de cajero o comprador</p>
+
+<div class="row">
+    <div class="col-md-8">
+        <label for="busqueda">Busqueda por nombre <input id="busqueda" type="text" name="busqueda" [(ngModel)]="busqueda"
+    /></label>
+        <br />
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-outline-info btn-block" (click)="buscar(busqueda)">
+      Buscar
+    </button>
+    </div>
+</div>
+
+<div class="modal-body">
+    <table class="table table-hover animated fadeInUp">
+        <!-- tr -> table row -->
+        <thead>
+            <!-- tr -> table row -->
+            <tr>
+                <!-- th -> table header -->
+                <th width="20%">Nombre Cajero</th>
+                <th width="20%">Nombre Cliente</th>
+                <th width="20%">Direccion</th>
+                <th width="20%">Telefono</th>
+                <th width="20%">Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let item of facturas">
+                <td>{{ item.nombreCajero }}</td>
+                <td>{{ item.nombre }}</td>
+                <td>{{ item.direccion }}</td>
+                <td>{{ item.telefono }}</td>
+                <td>{{ item.total }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div style="text-align:center">
+    <button type="button" class="btn btn-outline-secondary" (click)="redirigir()">Regresar</button>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<p>
+    ruta-revisar-compras works!
+</p>

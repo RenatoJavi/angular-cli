@@ -1,0 +1,38 @@
+<h1 class="rojo">Titulo {{ title }}</h1>
+
+<!-- <app-item-estudiante nombreItem="AULA1"> </app-item-estudiante>
+<app-item-estudiante nombreItem="Aula2"></app-item-estudiante>
+<app-item-estudiante nombreItem="Aula Chicas"></app-item-estudiante>
+<app-item-estudiante titulo="ok"></app-item-estudiante> -->
+
+<pre>
+  {{ carritoService.carritoCompras | json }}
+</pre>
+
+<div *ngIf="estasMostrando">
+    <app-item-estudiante *ngFor="let aula of aulas" [titulo]="aula.etiqueta" [nombreItem]="aula.piso">
+    </app-item-estudiante>
+</div>
+
+<ul>
+    <li *ngFor="let mate of materias">
+        <p>Materia: {{ mate['materiaNombre'] }}</p>
+        <p>Codigo: {{ mate['codigo'] }}</p>
+        <p>Descripción: {{ mate['descripcion'] }}</p>
+        <p>Activo: {{ mate['activo'] }}</p>
+        <p>Fecha: {{ mate['fechaCreacion'] }}</p>
+        <p>Numero de horas: {{ mate['numerosHorasPorSemana'] }}</p>
+        <p>Estudiante: {{ mate['estudianteId'] }}</p>
+    </li>
+</ul>
+<br />
+<ul>
+    <li *ngFor="let peli of peliculas">
+        <p>PELICULA: {{ peli['pelicula'] }}</p>
+        <p>Director: {{ peli['director'] }}</p>
+        <p>Año: {{ peli['anio'] }}</p>
+        <p>duracion: {{ peli['duracion'] }}</p>
+    </li>
+</ul>
+
+<!-- <button (click)="(peliculas)">NEXT</button> -->

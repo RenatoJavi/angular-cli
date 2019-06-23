@@ -1,0 +1,7 @@
+<div class="btn-group">
+    <div *ngFor="let item of acciones">
+        <button style="margin: 5px" type="button" class="btn btn-outline-info" (click)="redirigir(item.path2, item.path2)">
+      {{ item.titulo }}
+    </button>
+    </div>
+</div>

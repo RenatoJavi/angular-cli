@@ -1,0 +1,99 @@
+<p>
+    ruta-comprar works!
+</p>
+
+<form #formularioFactura="ngForm" novalidate (ngSubmit)="guardarFactura(formularioFactura)">
+    <div class="row">
+        <div class="col-lg-6">
+            <form class="form-inline">
+                <div class="form-group mb-2"><label for="nombre">Nombre </label></div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input id="nombre" required name="nombre" type="text" [(ngModel)]="nombre" #vtNombre="ngModel" />
+                </div>
+                <div class="form-group mb-2">
+                    <label for="id">RUC / Cedula </label>
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2">
+                    <input id="id" required name="id" type="text" [(ngModel)]="id" #vtId="ngModel" />
+                </div>
+                <!-- </form>
+            <form class="form-inline"> -->
+                <br />
+                <br />
+
+                <div class="form-group mb-2">
+                    <label for="direccion">Dirección</label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input id="direccion" required name="direccion" type="text" [(ngModel)]="direccion" #vtDireccion="ngModel" />
+                </div>
+
+                <!-- cambiar estilo -->
+                <!-- <div class="col"> -->
+
+                <div class="form-group mb-2">
+                    <label for="telefono"> Teléfono</label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input id="telefono" required name="telefono" type="text" [(ngModel)]="telefono" #vtTelefono="ngModel" />
+                </div>
+
+                <!-- ;l;l;l;l -->
+
+                <div class="form-group mb-2">
+                    <label for="correo">Correo</label>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input id="correo" required name="correo" type="email" [(ngModel)]="correo" #vtCorreo="ngModel" />
+                </div>
+            </form>
+
+            <div class="col">
+                {{ _carritoService.carrito | json }}
+            </div>
+            <div>
+                <ul class="list-group" *ngFor="let item of carrito['productos']">
+                    <li class="list-group-item" *ngIf="item.cantidad > 0">
+                        {{ item.valor1 }} - {{ item.valor2 }} Cantidad:{{ item.cantidad }}
+                        <button type="button" class="btn btn-outline-secondary" (click)="quitar(item)">
+              quitar
+            </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group mx-sm-3 mb-2">
+                <h4>Cajero: {{ cajero }}</h4>
+                <h4>Total : {{ total }}</h4>
+                <ul *ngFor="let item of productos">
+                    <li>
+                        {{ item.estudiante }} -- {{ item.materia }}
+                        <button type="button" class="btn btn-outline-secondary" (click)="agregar(item)">
+              incrementar
+            </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <pre>
+ERROR:
+          {{ vtNombre.errors | json }}
+        </pre -->
+
+    <br />
+    <div class="btn-group">
+        <div style="text-align:center">
+            <button class="btn btn-outline-primary btn-block" type="submit" [disabled]="formularioFactura.invalid">
+        Finalizar compra
+      </button>
+
+            <button class="btn btn-outline-danger btn-block estaciado-boton" type="button" (click)="redirigir()">
+        Cancelar
+      </button>
+        </div>
+    </div>
+</form>

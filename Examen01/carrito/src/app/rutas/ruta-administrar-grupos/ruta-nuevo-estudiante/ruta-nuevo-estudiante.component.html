@@ -1,0 +1,95 @@
+<p>
+  ruta-nuevo-estudiante works!
+</p>
+<pre>Valido: {{formularioUsuario.valid}}</pre>
+<pre>Invalido: {{formularioUsuario.invalid}}</pre>
+
+<form 
+
+#formularioUsuario="ngForm"
+novalidate
+(submit)="guardarUsuario(formularioUsuario)"
+>
+<div class="row">
+  <div class="col">
+      <label for="nombre">Nombre</label>
+
+      <input id="nombre" 
+      required 
+      name="nombre"  
+      type="email"   
+      [(ngModel)]="nombre"
+      #vtNombre="ngModel"
+      >
+</div>
+<div class="col">
+
+<label for="apellido">Apellido</label>
+  <input id="apellido" required 
+  name="apellido"  
+  type="text"  
+  [(ngModel)]="apellido"
+  #vtApellido="ngModel"
+  >
+</div>
+</div>
+  <br>
+
+  <label for="fechaNacimiento">Fecha de nacimiento</label>
+
+  <input id="fechaNacimiento" 
+  required 
+  name="fechaNacimiento"  
+  type="date"   
+  [(ngModel)]="fechaNacimiento"
+  #vtFechaNacimiento="ngModel"
+  >
+
+  <br>
+
+  <label for="semestreActual">Semestre Actual</label>
+
+  <input id="semestreActual" 
+  required 
+  name="semestreActual"  
+  type="number"   
+  [(ngModel)]="semestreActual"
+  #vtsemestreActual="ngModel"
+  >
+  
+
+<br>
+  <label for="graduado">Estado </label>
+  <select class="form-control"
+  id="graduado" 
+  required 
+  name="graduado"  
+  type="se"   
+  [(ngModel)]="graduado"
+  #vtGraduado="ngModel"
+   >
+    <option value="true">Graduado</option>
+    <option value="false">No graduado</option>
+  </select>
+
+
+
+  <div *ngIf="vtNombre.errors && vtNombre.dirty">
+    <h3>Errores</h3>
+    <p>Existe un error</p>
+    <p *ngIf="vtNombre.errors.minlength"> Minimo son 10 caracteres shunshito</p>
+    <p *ngIf="vtNombre.errors.pattern"> Solo se permiten letras C:</p>
+    <p *ngIf="vtNombre.errors.required">Es obligatoooriiioooo!!!!!! >:( </p>
+  </div>
+
+
+  <pre>ERROR: 
+      {{vtNombre.errors | json}}
+    </pre>
+
+  <br>
+  <br>
+  <button class="btn btn-outline-primary btn-block" type="submit" [disabled]="formularioUsuario.invalid" >Crear</button>
+  <button class="btn btn-outline-danger btn-block estaciado-boton"  type="submit" [routerLink]="['/menu','revisar-grupos']"> Cancelar</button>
+
+</form>

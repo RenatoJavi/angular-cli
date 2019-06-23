@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+.texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.contenedor {
+    padding: 40px;
+    margin: 40px;
+    border: 5px black solid;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.contenedor-Imagen {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.centrado {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
