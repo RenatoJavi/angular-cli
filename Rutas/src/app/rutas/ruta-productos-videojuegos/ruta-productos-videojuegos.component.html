@@ -1,1 +1,15 @@
 <p>ruta-productos-videojuegos works!</p>
+<h2>Menu Viedeojuegos</h2>
+<ul>
+    <li>
+        <a [routerLink]="['/productos', 'videojuegos', 'aventuras']">Videojuegos aventuras</a
+    >
+  </li>
+  <li>
+    <a [routerLink]="['/productos', 'videojuegos', 'combate']"
+      >Videojuegos combate</a
+    >
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

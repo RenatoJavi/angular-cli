@@ -8,6 +8,8 @@ import { RutaProductosHogarComponent } from './rutas/ruta-productos-hogar/ruta-p
 import { RutaProductosVideojuegosComponent } from './rutas/ruta-productos-videojuegos/ruta-productos-videojuegos.component';
 import { RutaCreditoPersonalComponent } from './rutas/ruta-credito-personal/ruta-credito-personal.component';
 import { RutaCreditoTarjetaComponent } from './rutas/ruta-credito-tarjeta/ruta-credito-tarjeta.component';
+import { RutaProductosVideojuegosAventurasComponent } from './rutas/ruta-productos-videojuegos-aventuras/ruta-productos-videojuegos-aventuras.component';
+import { RutaProductosVideojuegosCombateComponent } from './rutas/ruta-productos-videojuegos-combate/ruta-productos-videojuegos-combate.component';
 
 const routes: Routes = [
   {
@@ -40,6 +42,16 @@ const routes: Routes = [
       {
         path: 'videojuegos',
         component: RutaProductosVideojuegosComponent,
+        children: [
+          {
+            path: 'aventuras',
+            component: RutaProductosVideojuegosAventurasComponent,
+          },
+          {
+            path: 'combate',
+            component: RutaProductosVideojuegosCombateComponent,
+          },
+        ],
       },
     ],
   },
