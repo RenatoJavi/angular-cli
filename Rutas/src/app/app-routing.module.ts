@@ -10,15 +10,18 @@ import { RutaCreditoPersonalComponent } from './rutas/ruta-credito-personal/ruta
 import { RutaCreditoTarjetaComponent } from './rutas/ruta-credito-tarjeta/ruta-credito-tarjeta.component';
 import { RutaProductosVideojuegosAventurasComponent } from './rutas/ruta-productos-videojuegos-aventuras/ruta-productos-videojuegos-aventuras.component';
 import { RutaProductosVideojuegosCombateComponent } from './rutas/ruta-productos-videojuegos-combate/ruta-productos-videojuegos-combate.component';
+import { RutaProductosVideojuegosAventurasJunglaComponent } from './rutas/ruta-productos-videojuegos-aventuras-jungla/ruta-productos-videojuegos-aventuras-jungla.component';
+import { RutaProductosVideojuegosAventurasMarioCarComponent } from './rutas/ruta-productos-videojuegos-aventuras-mario-car/ruta-productos-videojuegos-aventuras-mario-car.component';
+import { RutaProductosVideojuegosAventurasTarzanComponent } from './rutas/ruta-productos-videojuegos-aventuras-tarzan/ruta-productos-videojuegos-aventuras-tarzan.component';
 
 const routes: Routes = [
   {
-    path: 'home/app/app2', //tenemos 2 segmentos home y app
+    path: 'home/app', //tenemos 2 segmentos home y app
 
     component: RutaHomeComponent,
   },
   {
-    path: 'creditos',
+    path: 'creditos/:idcreditos',
     component: RutaCreditosComponent,
     children: [
       {
@@ -46,6 +49,20 @@ const routes: Routes = [
           {
             path: 'aventuras',
             component: RutaProductosVideojuegosAventurasComponent,
+            children: [
+              {
+                path: 'jungla',
+                component: RutaProductosVideojuegosAventurasJunglaComponent,
+              },
+              {
+                path: 'mario-car',
+                component: RutaProductosVideojuegosAventurasMarioCarComponent,
+              },
+              {
+                path: 'tarzan',
+                component: RutaProductosVideojuegosAventurasTarzanComponent,
+              },
+            ],
           },
           {
             path: 'combate',
@@ -59,6 +76,9 @@ const routes: Routes = [
     path: 'no-encontrada',
     component: RutaNoEncontradaComponent,
   },
+
+  { path: '', redirectTo: '/home/app', pathMatch: 'full' }, //esta ruta ba al final de todas
+  { path: '**', component: RutaNoEncontradaComponent },
 ];
 
 @NgModule({
