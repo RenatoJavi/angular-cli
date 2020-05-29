@@ -1,1 +1,22 @@
 <p>ruta-productos-videojuegos-aventuras works!</p>
+<h2>Lista de videojuegos de aventuras</h2>
+<ul>
+    <li>
+        <a [routerLink]="['/productos', 'videojuegos', 'aventuras', 'mario-car']">
+      Aventuras Mario Car</a
+    >
+  </li>
+
+  <li>
+    <a [routerLink]="['/productos', 'videojuegos', 'aventuras', 'tarzan']">
+      Aventuras de Tarzan</a
+    >
+  </li>
+  <li>
+    <a [routerLink]="['/productos', 'videojuegos', 'aventuras', 'jungla']"
+      >Aventuras en la Jungla</a
+    >
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

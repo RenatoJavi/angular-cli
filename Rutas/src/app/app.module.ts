@@ -13,6 +13,9 @@ import { RutaCreditoPersonalComponent } from './rutas/ruta-credito-personal/ruta
 import { RutaCreditoTarjetaComponent } from './rutas/ruta-credito-tarjeta/ruta-credito-tarjeta.component';
 import { RutaProductosVideojuegosAventurasComponent } from './rutas/ruta-productos-videojuegos-aventuras/ruta-productos-videojuegos-aventuras.component';
 import { RutaProductosVideojuegosCombateComponent } from './rutas/ruta-productos-videojuegos-combate/ruta-productos-videojuegos-combate.component';
+import { RutaProductosVideojuegosAventurasTarzanComponent } from './rutas/ruta-productos-videojuegos-aventuras-tarzan/ruta-productos-videojuegos-aventuras-tarzan.component';
+import { RutaProductosVideojuegosAventurasMarioCarComponent } from './rutas/ruta-productos-videojuegos-aventuras-mario-car/ruta-productos-videojuegos-aventuras-mario-car.component';
+import { RutaProductosVideojuegosAventurasJunglaComponent } from './rutas/ruta-productos-videojuegos-aventuras-jungla/ruta-productos-videojuegos-aventuras-jungla.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { RutaProductosVideojuegosCombateComponent } from './rutas/ruta-productos
     RutaCreditoTarjetaComponent,
     RutaProductosVideojuegosAventurasComponent,
     RutaProductosVideojuegosCombateComponent,
+    RutaProductosVideojuegosAventurasTarzanComponent,
+    RutaProductosVideojuegosAventurasMarioCarComponent,
+    RutaProductosVideojuegosAventurasJunglaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

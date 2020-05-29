@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Rutas';
 
-  rutaHome = ['/home', 'app', 'app2']; //2 segmentos tambien, solo al primero se le pone el /
+  rutaHome = ['/home', 'app']; //2 segmentos tambien, solo al primero se le pone el /
   rutaCreditos = ['/creditos'];
 }
