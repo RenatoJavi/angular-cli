@@ -21,7 +21,7 @@ const routes: Routes = [
     component: RutaHomeComponent,
   },
   {
-    path: 'creditos/:idcreditos',
+    path: 'creditos/:idcreditos/:referencia',
     component: RutaCreditosComponent,
     children: [
       {
