@@ -6,6 +6,7 @@ import { HeroesComponent } from './componentes/heroes/heroes.component';
 import { HeadComponent } from './componentes/head/head.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { AboutComponent } from './componentes/about/about.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,10 @@ import { AboutComponent } from './componentes/about/about.component';
     HeroesComponent,
     HeadComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
