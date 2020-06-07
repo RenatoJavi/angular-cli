@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7838654f-86be-42af-96a4-ec81900379e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/06-texto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/7-Promesas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript-Javier/01-app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11-hola_mundo/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/11-hola_mundo/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11-hola_mundo/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/11-hola_mundo/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11-hola_mundo/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/11-hola_mundo/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11-hola_mundo/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/11-hola_mundo/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11-hola_mundo/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/11-hola_mundo/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_spa/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/12_spa/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_spa/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/12_spa/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_spa/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/12_spa/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_spa/src/app/componentes/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/12_spa/src/app/componentes/home/home.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,82 +23,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="502131869">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="js" value="2" />
-          <entry key="ts" value="2" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="js" value="548" />
-          <entry key="ts" value="15" />
-          <entry key="txt" value="28" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JavaScript" value="548" />
-          <entry key="PLAIN_TEXT" value="28" />
-          <entry key="TypeScript" value="15" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TypeScript-Javier/01-app.ts">
+        <entry file="file://$PROJECT_DIR$/01-JavaScript/7-Promesas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TypeScript-Javier/01-app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="322">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/01-JavaScript/7-Promesas.js">
+        <entry file="file://$PROJECT_DIR$/nodejs-ejemplo/app-express.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -123,21 +74,17 @@
         <option value="$PROJECT_DIR$/TypeScript-Javier/01-app.ts" />
         <option value="$PROJECT_DIR$/01-JavaScript/06-texto.txt" />
         <option value="$PROJECT_DIR$/01-JavaScript/7-Promesas.js" />
+        <option value="$PROJECT_DIR$/nodejs-ejemplo/app-express.js" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1045" />
-    <option name="y" value="127" />
+    <option name="x" value="561" />
+    <option name="y" value="99" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -163,8 +110,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../salazar-espinosa-renato-javier" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.scopes" />
@@ -184,7 +138,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="7-Promesas.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="7-Promesas.js" working-dir="$PROJECT_DIR$/01-JavaScript">
+    <configuration name="7-Promesas.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="7-Promesas.js" working-dir="$PROJECT_DIR$/01-JavaScript">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -210,16 +164,18 @@
       <workItem from="1544454967199" duration="596000" />
       <workItem from="1544567876190" duration="1014000" />
       <workItem from="1544583986359" duration="8000" />
+      <workItem from="1591068279620" duration="986000" />
+      <workItem from="1591140803665" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9122000" />
+    <option name="totallyTimeSpent" value="10118000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="836" y="102" width="784" height="832" extended-state="0" />
+    <frame x="561" y="99" width="980" height="1040" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31375167" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3128314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -229,10 +185,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18857902" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18854167" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -241,29 +197,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/TypeScript-Javier/01-app.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-      </list>
-    </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TypeScript-Javier/app.ts" />
-    <entry file="file://$PROJECT_DIR$/TypeScript-Javier/01-app.ts">
+    <entry file="file://$PROJECT_DIR$/TypeScript-Javier/01-app.ts" />
+    <entry file="file://$PROJECT_DIR$/TypeScript-Javier/01-app.js" />
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/7-Promesas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeScript-Javier/01-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="322">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -274,13 +219,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/7-Promesas.js">
+    <entry file="file://$PROJECT_DIR$/nodejs-ejemplo/app-express.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
