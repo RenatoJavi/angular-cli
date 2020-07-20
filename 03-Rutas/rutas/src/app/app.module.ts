@@ -1,12 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { RutaHomeComponent } from './rutas/ruta-home/ruta-home.component';
-import { RutaCreditosComponent } from './rutas/ruta-creditos/ruta-creditos.component';
-import { RutaProductosComponent } from './rutas/ruta-productos/ruta-productos.component';
-import { RutaNoEncontradaComponent } from './rutas/ruta-no-encontrada/ruta-no-encontrada.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { RutaHomeComponent } from "./rutas/ruta-home/ruta-home.component";
+import { RutaCreditosComponent } from "./rutas/ruta-creditos/ruta-creditos.component";
+import { RutaProductosComponent } from "./rutas/ruta-productos/ruta-productos.component";
+import { RutaNoEncontradaComponent } from "./rutas/ruta-no-encontrada/ruta-no-encontrada.component";
 
 @NgModule({
   declarations: [
@@ -14,13 +14,10 @@ import { RutaNoEncontradaComponent } from './rutas/ruta-no-encontrada/ruta-no-en
     RutaHomeComponent,
     RutaCreditosComponent,
     RutaProductosComponent,
-    RutaNoEncontradaComponent
+    // RutaNoEncontradaComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
