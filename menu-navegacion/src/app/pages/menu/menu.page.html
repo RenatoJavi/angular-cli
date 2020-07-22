@@ -17,7 +17,12 @@
         <ion-nav [root]="rootPage"></ion-nav>
     </ion-menu>
     <ion-header>
-        <ion-nav [root]="rootContenido"></ion-nav>
+        <ion-content>
+            <ion-list>
+                <ion-button (click)="goToNextPage()">Next</ion-button>
+            </ion-list>
+        </ion-content>
+        <ion-tabs></ion-tabs>
     </ion-header>
 
     <ion-router-outlet main></ion-router-outlet>

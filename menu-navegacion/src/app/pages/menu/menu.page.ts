@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MenuListPageModule } from '../menu-list/menu-list.module';
 import { MenuListPage } from '../menu-list/menu-list.page';
 import { ContenidoPage } from '../contenido/contenido.page';
+import { NavController } from '@ionic/angular';
+import { MenuListPageRoutingModule } from '../menu-list/menu-list-routing.module';
+import { url } from 'inspector';
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +14,10 @@ import { ContenidoPage } from '../contenido/contenido.page';
 export class MenuPage implements OnInit {
   rootPage = MenuListPage;
   rootContenido = ContenidoPage;
-  constructor() {}
+  constructor(public navCtrl: NavController) {}
+  goToNextPage() {
+    //  this.navCtrl.navigateForward();
+  }
 
   ngOnInit() {}
 }

@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-list.page.scss'],
 })
 export class MenuListPage implements OnInit {
+  level = 0;
+  nextPage = MenuListPage;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
