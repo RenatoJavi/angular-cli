@@ -1,0 +1,7 @@
+{
+  "name": "platos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
