@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.page.scss'],
 })
 export class AboutPage implements OnInit {
+  about: string;
 
-  constructor() { }
+  constructor(public _activeRoute: ActivatedRoute) {}
 
   ngOnInit() {
+    this.about = this._activeRoute.snapshot.paramMap.get('id');
   }
-
 }
