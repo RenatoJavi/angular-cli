@@ -1,4 +1,4 @@
-"""miTienda URL Configuration
+"""Contactos URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -14,15 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from modulos.Academica.views import formularioContacto
-from modulos.Academica.views import tag_lookup, contactar
-from modulos.Academica.views import mensajeEntregado
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('formularioContacto/', formularioContacto),
-    path('tags/', tag_lookup),
-    path('contactar/', contactar),
-    path('mensajeEntregado/', mensajeEntregado),
 ]
