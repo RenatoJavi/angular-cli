@@ -13,12 +13,12 @@ const routes: Routes = [
       import('./folder/folder.module').then((m) => m.FolderPageModule),
   },
   {
-    path: 'about',
+    path: 'about/:id',
     loadChildren: () =>
       import('./pages/about/about.module').then((m) => m.AboutPageModule),
   },
   {
-    path: 'contact',
+    path: 'contact/:id',
     loadChildren: () =>
       import('./pages/contact/contact.module').then((m) => m.ContactPageModule),
   },
@@ -28,7 +28,7 @@ const routes: Routes = [
       import('./pages/home/home.module').then((m) => m.HomePageModule),
   },
   {
-    path: 'menu',
+    path: 'menu/:id',
     loadChildren: () =>
       import('./pages/menu/menu.module').then((m) => m.MenuPageModule),
   },
