@@ -1,0 +1,26 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ClientesComponent,
+    HeaderComponent,
+    CuerpoComponent,
+    FooterComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
