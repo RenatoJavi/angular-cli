@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27ab3ee1-3864-4b85-b22b-1feb22489a0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodejs-ejemplo/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21-REACT/calc-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/21-REACT/calc-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21-REACT/calc-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/21-REACT/calc-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/21-REACT/calc-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/21-REACT/calc-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/01-Angular/galeria/node_modules/" />
     <ignored path="$PROJECT_DIR$/03-Rutas/rutas/node_modules/" />
@@ -29,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/20-CursoWeb/1-Ej_TypeScript/app.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="384">
+              <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -49,8 +66,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="489" />
-    <option name="y" value="47" />
+    <option name="x" value="594" />
+    <option name="y" value="38" />
     <option name="width" value="1157" />
     <option name="height" value="970" />
   </component>
@@ -71,20 +88,7 @@
             <path>
               <item name="angular-cli" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular-cli" type="462c0819:PsiDirectoryNode" />
-              <item name="20-CursoWeb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-cli" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular-cli" type="462c0819:PsiDirectoryNode" />
-              <item name="20-CursoWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="1-Ej_TypeScript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-cli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-cli" type="462c0819:PsiDirectoryNode" />
-              <item name="20-CursoWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="1-Ej_TypeScript" type="462c0819:PsiDirectoryNode" />
-              <item name="app.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="angular-cli" type="b2602c69:ProjectViewProjectNode" />
@@ -136,19 +140,19 @@
       <updated>1620186195150</updated>
       <workItem from="1620186196458" duration="4835000" />
       <workItem from="1620270966317" duration="1812000" />
+      <workItem from="1622389848802" duration="841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6647000" />
+    <option name="totallyTimeSpent" value="7488000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="489" y="47" width="1157" height="970" extended-state="0" />
+    <frame x="594" y="38" width="1157" height="970" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18928571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -160,6 +164,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3280899" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -170,6 +175,11 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/02-typescript/02-observable.js" />
+        <option value="$PROJECT_DIR$/platos/src/app/shared/lider.js" />
+        <option value="$PROJECT_DIR$/20-CursoWeb/1-Ej_TypeScript/flecha.js" />
+        <option value="$PROJECT_DIR$/20-CursoWeb/1-Ej_TypeScript/interfaces.js" />
+        <option value="$PROJECT_DIR$/20-CursoWeb/1-Ej_TypeScript/promesa.js" />
+        <option value="$PROJECT_DIR$/20-CursoWeb/1-Ej_TypeScript/clase.js" />
       </list>
     </option>
   </component>
@@ -200,8 +210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/20-CursoWeb/1-Ej_TypeScript/app.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="384">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
         </state>
       </provider>
     </entry>

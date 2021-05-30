@@ -1,14 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';// se complementan 
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import miApp1 from './App1';
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+const h1Tag=document.createElement('h1',null,`${miApp1}`);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+h1Tag,
+ document.getElementById('root')
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
