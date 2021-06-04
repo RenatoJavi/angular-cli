@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27ab3ee1-3864-4b85-b22b-1feb22489a0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/21-REACT/calc-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/21-REACT/calc-app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/21-REACT/calc-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/21-REACT/calc-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/21-REACT/calc-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/21-REACT/calc-app/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-cli/aprendiendo-react/package.json" beforeDir="false" />
@@ -104,7 +101,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/21-REACT" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -140,12 +137,12 @@
       <updated>1620186195150</updated>
       <workItem from="1620186196458" duration="4835000" />
       <workItem from="1620270966317" duration="1812000" />
-      <workItem from="1622389848802" duration="841000" />
+      <workItem from="1622389848802" duration="1593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7488000" />
+    <option name="totallyTimeSpent" value="8240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="594" y="38" width="1157" height="970" extended-state="0" />
