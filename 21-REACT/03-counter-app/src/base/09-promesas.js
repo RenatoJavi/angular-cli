@@ -1,4 +1,9 @@
-import { getHeroeById } from "./08-impo-export";
+
+//import {getHeroe} from './08-impo-export';
+
+
+import {getHeroe} from './08-impo-export'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,17 +25,17 @@ reportWebVitals();
 // .catch(err=>console.warn(err));
 
 console.log('nueva linea')
-export const getHeroeByIdAsync=(id)=>{
+const getHeroeByAsync=(id)=>{
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{
-      const p1=getHeroeById(id);   
+      const p1=getHeroe(id);   
              if (p1) {
       resolve(p1);      
     } else {
       reject('NO SE PUDO ENCONTRAR EL HEROE');
     }
     
-    },1500);
+    },2000);
   });
   //return promesa;
 }
@@ -39,4 +44,4 @@ export const getHeroeByIdAsync=(id)=>{
 //  .catch(  err=>console.console.(err) );
 //*****otra forma de mostrar la promesa en consola */
 
-//getHeroeByAsync(4).then(console.log).catch(console.warn);
+getHeroeByAsync(4).then(console.log).catch(console.warn);
