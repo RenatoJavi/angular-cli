@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+   <script src="https://unpkg.com/@babel/standalone@7.14.3/babel.min.js"></script>
+    
+   <title>ReactApp</title>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" >
+    const divRoot= document.querySelector('#root');
+    // esta es la referencia del id de root
+    const nombre="Nico";
+        const h1Tag=<h1>New idea, new work, better life. Hola soy
+             { nombre} y este es mi comienzo</h1>
+        ReactDOM.render(h1Tag,divRoot);
+      </script>
+</body>
+</html>
