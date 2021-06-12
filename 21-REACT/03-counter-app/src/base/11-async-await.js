@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../index.css';
+import './index.css';
 import App from './App';
-
 import reportWebVitals from './reportWebVitals';
 import { async } from 'rxjs';
 //import { getOwner } from './bases/08-impo-export';
@@ -27,7 +26,7 @@ reportWebVitals();
      
 // }
 // getImagenPromesa().then(console.log);
-export const getImagen=async()=>{
+const getImagen=async()=>{
 
  try {
   const apikey='k3yngY6Tvh8ivUgBnE8H4cPWpsn6xLV7';

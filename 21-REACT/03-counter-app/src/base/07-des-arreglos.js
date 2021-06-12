@@ -4,23 +4,23 @@ const personajes=['GOKU','VEGET','TRONS'];
 
 
 const [,,per3]=personajes;
-console.log(per3);
+//console.log(per3);
 
 
-const retornaArreglo=()=>{
-  return ['abc',123];
+export  const retornaArreglo=()=>{
+  return ['abc',1234];
 
 }
 
 const [letras,num]=retornaArreglo();
 //para desestructurar const[variables]
-console.log(letras,num);
+//console.log(letras,num);
 
-//tarea
+//tarea un hook es una funcion
 const usState=(valor)=>{
   return [valor,()=>{console.log('hola mundo')}];
 
 };
 const [nombre,setNombre]=usState('Goku');
-console.log(nombre);
+//console.log(nombre);
 setNombre();

@@ -1,0 +1,14 @@
+html,body{
+
+    color: white;
+    background-color: #21232a;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+button{
+padding: 10px;
+margin-bottom: 20%;
+font-size: 50%;
+
+}
