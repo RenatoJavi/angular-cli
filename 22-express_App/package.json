@@ -1,0 +1,14 @@
+{
+  "name": "22-express_app",
+  "version": "1.0.0",
+  "description": "servidor https con node y express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Salazar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
